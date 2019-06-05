@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Required Style-->
+    <link rel="stylesheet" href="~/content/style/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/content/style/css/utilities.css" />
+    <script src="~/content/style/js/jquery.min.js">
+    </script>
+    <!--Required Style-->
+    <!--Nide Style-->
+    <link rel="stylesheet" href="~/content/style/css/style.css" />
+    <link rel="stylesheet" href="~/content/style/css/responsive.css" />
+    <!--Nide Style-->
+
+</head>
+<body>
+    
+    <!-- start Menu Mobile -->
+    <section class="box-top-bar col hidden-lg-up">
+        <div class="inner-top-bar col">
+            <span class="button-top-bar menu-top-bar" id="menu-top-bar">
+                <?xml version="1.0" encoding="UTF-8" ?>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20pt" height="20pt" viewBox="0 0 48 48" version="1.1" class="centerbox">
+                    <g id="surface1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:#A6A6A6;fill-opacity:1;" d="M 4 4 L 4 22 L 22 22 L 22 4 Z M 26 4 L 26 22 L 44 22 L 44 4 Z M 8 8 L 18 8 L 18 18 L 8 18 Z M 30 8 L 40 8 L 40 18 L 30 18 Z M 4 26 L 4 44 L 22 44 L 22 26 Z M 26 26 L 26 44 L 44 44 L 44 26 Z M 8 30 L 18 30 L 18 40 L 8 40 Z M 30 30 L 40 30 L 40 40 L 30 40 Z " />
+                    </g>
+                </svg>
+            </span> <span class="button-top-bar login-top-bar" id="login-top-bar">
+                <?xml version="1.0" encoding="UTF-8" ?>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="18pt" viewBox="0 0 50 50" version="1.1" class="centerbox">
+                    <g id="surface1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:#A6A6A6;fill-opacity:1;" d="M 25 0 C 12.859375 0 3 9.859375 3 22 C 3 27.320313 4.886719 32.195313 8.03125 36 L 3.3125 36 C 2.953125 35.996094 2.617188 36.183594 2.433594 36.496094 C 2.253906 36.808594 2.253906 37.191406 2.433594 37.503906 C 2.617188 37.816406 2.953125 38.003906 3.3125 38 L 12 38 L 12 29.3125 C 12.003906 29.023438 11.878906 28.75 11.664063 28.558594 C 11.449219 28.367188 11.160156 28.277344 10.875 28.3125 C 10.371094 28.375 9.996094 28.804688 10 29.3125 L 10 35.1875 C 6.898438 31.664063 5 27.070313 5 22 C 5 10.941406 13.941406 2 25 2 C 36.058594 2 45 10.941406 45 22 C 45 27.285156 42.96875 32.082031 39.625 35.65625 C 39.332031 35.902344 39.207031 36.296875 39.300781 36.664063 C 39.394531 37.035156 39.695313 37.320313 40.066406 37.398438 C 40.441406 37.476563 40.828125 37.332031 41.0625 37.03125 C 44.738281 33.101563 47 27.800781 47 22 C 47 9.859375 37.140625 0 25 0 Z M 24.875 7.40625 C 21.195313 7.472656 18.507813 8.570313 16.875 10.71875 C 14.941406 13.265625 14.589844 17.144531 15.8125 22.21875 C 15.363281 22.769531 15.023438 23.605469 15.15625 24.71875 C 15.417969 26.914063 16.296875 27.824219 17 28.1875 C 17.339844 29.921875 18.296875 31.863281 19.21875 32.78125 L 19.21875 33.25 C 19.226563 34.265625 19.222656 35.144531 19.125 36.28125 C 18.511719 37.6875 16.476563 38.511719 14.125 39.4375 C 10.21875 40.972656 5.363281 42.871094 5 48.9375 L 4.9375 50 L 45.0625 50 L 45 48.9375 C 44.636719 42.871094 39.800781 40.972656 35.90625 39.4375 C 33.566406 38.511719 31.515625 37.6875 30.90625 36.28125 C 30.808594 35.148438 30.835938 34.265625 30.84375 33.25 L 30.84375 32.78125 C 31.738281 31.867188 32.660156 29.921875 33 28.1875 C 33.722656 27.828125 34.578125 26.921875 34.84375 24.71875 C 34.976563 23.628906 34.65625 22.800781 34.21875 22.25 C 34.800781 20.269531 35.988281 15.113281 33.9375 11.8125 C 33.078125 10.429688 31.777344 9.558594 30.0625 9.21875 C 29.117188 8.027344 27.304688 7.40625 24.875 7.40625 Z " />
+                    </g>
+                </svg>
+            </span> <span class="button-top-bar search-top-bar" id="search-top-bar">
+                <?xml version="1.0" encoding="UTF-8" ?>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="18pt" viewBox="0 0 50 50" version="1.1" class="centerbox">
+                    <g id="surface1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:#A6A6A6;fill-opacity:1;" d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z " />
+                    </g>
+                </svg>
+            </span> <span class="button-top-bar shopping-bag-top-bar" id="shopping-bag-top-bar">
+                <?xml version="1.0" encoding="UTF-8" ?>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="18pt" viewBox="0 0 50 50" version="1.1" class="centerbox">
+                    <g id="surface1">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:#A6A6A6;fill-opacity:1;" d="M 2 2 C 0.894531 2 0 2.894531 0 4 C 0 5.105469 0.894531 6 2 6 C 3.105469 6 4 5.105469 4 4 L 8.65625 4 C 10.742188 4 11.542969 4.667969 12.21875 6.9375 L 20.21875 39.21875 C 20.644531 40.828125 21.125 42.609375 22.9375 43.46875 C 22.367188 44.160156 22 45.035156 22 46 C 22 48.207031 23.792969 50 26 50 C 28.207031 50 30 48.207031 30 46 C 30 45.269531 29.78125 44.589844 29.4375 44 L 35.5625 44 C 35.21875 44.589844 35 45.269531 35 46 C 35 48.207031 36.792969 50 39 50 C 41.207031 50 43 48.207031 43 46 C 43 44.960938 42.589844 44.023438 41.9375 43.3125 C 41.972656 43.210938 42 43.113281 42 43 C 42 42.449219 41.550781 42 41 42 L 25.71875 42 C 23.023438 42 22.730469 40.921875 22.15625 38.75 L 21.46875 36 L 39.8125 36 C 40.226563 36 40.605469 35.730469 40.75 35.34375 L 47.9375 16.34375 C 48.054688 16.039063 47.996094 15.707031 47.8125 15.4375 C 47.628906 15.167969 47.324219 15 47 15 L 16.28125 15 L 14.15625 6.40625 C 13.476563 4.117188 12.320313 2 8.65625 2 Z M 27.375 6.1875 C 27.121094 6.1875 26.851563 6.304688 26.65625 6.5 L 20.125 13 L 34.59375 13 L 28.0625 6.5 C 27.867188 6.304688 27.628906 6.1875 27.375 6.1875 Z M 35.375 6.21875 C 35.117188 6.21875 34.84375 6.3125 34.65625 6.5 L 32.78125 8.375 L 37.40625 13 L 42.59375 13 L 36.0625 6.5 C 35.875 6.3125 35.632813 6.21875 35.375 6.21875 Z M 26 44 C 27.101563 44 28 44.898438 28 46 C 28 47.101563 27.101563 48 26 48 C 24.898438 48 24 47.101563 24 46 C 24 44.898438 24.898438 44 26 44 Z M 39 44 C 40.101563 44 41 44.898438 41 46 C 41 47.101563 40.101563 48 39 48 C 37.898438 48 37 47.101563 37 46 C 37 44.898438 37.898438 44 39 44 Z " />
+                    </g>
+                </svg>
+            </span>
+            <a href="" class="name-store"> <img src="~/content/img/logo/logo-sm.png" alt="logo" /> </a>
+        </div>
+        <div class="slide">
+            <div class="box-slide-nav slide-right positionfixed transition-03s" id="box-menu-top-bar">
+                <div class="inner-slide-topmenu"></div>
+                <div class="inner-slide-nav"></div>
+            </div>
+            <div class="box-slide-nav slide-right positionfixed transition-03s" id="box-login-top-bar">
+                <div class="inner-slide-login">
+                    <ul class="catIcon pull-right">
+                        <li>
+                            <a href="">
+                                <div class="img"><img src="./~/content/img/menu/1.svg" width="30" height="30" /></div> ورود/ثبت نام
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="img"><img src="./~/content/img/menu/2.svg" width="33" height="33" /></div> ورود با گوگل
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="img"><img src="./~/content/img/menu/3.svg" width="31" height="31" /></div> ورود با یاهو
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="box-slide-nav slide-left positionfixed transition-03s" id="box-search-top-bar">
+            <div class="inner-slide-search">
+                <div class="inner-box-search">
+                    <form action="">
+                        <input type="search" name="" id="" placeholder="محصول یا برند مورد نظر خود را جستجو کنید" />
+                        <button class="button-search transition-03s" type="submit">
+                            <i class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="18pt" viewBox="0 0 50 50" version="1.1" class="centerbox">
+                                    <g id="surface1">
+                                        <path style=" stroke:none;fill-rule:nonzero;fill:#ffffff;fill-opacity:1;" d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z "></path>
+                                    </g>
+                                </svg>
+                            </i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- end Menu Mobile -->
+    <!--Header Start-->
+    <header class="container hidden-sm">
+        <div class="row">
+            <div class="col-xs-24">
+                <div class="header">
+                    <div class="col-md-19">
+                        <div class="row">
+                            <nav id="navigation">
+                                <ul id="m" class="menu">
+                                    <li class="menu"><a href="/">صفحه اصلی</a></li>
+                                    <li class="menu"><a href="">تبلیغات</a></li>
+                                    <li class="menu"><a href="">درباره ما</a></li>
+                                </ul>
+                                <form method="get" id="searchform" action="">
+                                    <input name="s" id="searchtext" type="search" placeholder="جستجو کنید..." />
+                                    <button type="submit"><i class="icon-search"></i></button>
+                                </form>
+                            </nav>
+                            <ul class="catIcon pull-right hidden-xs">
+                                <li>
+                                    <a href="">
+                                        <div class="img"><img src="./~/content/img/menu/1.svg" width="30" height="30" alt="" /></div> ورود/ثبت نام
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="img"><img src="./~/content/img/menu/2.svg" width="33" height="33" alt="نرم افزار" /></div> ورود با گوگل
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="img"><img src="./~/content/img/menu/3.svg" width="31" height="31" alt="بازی" /></div> ورود با یاهو
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="img"><img src="./~/content/img/menu/4.svg" width="33" height="33" alt="آموزش" /></div> سبد خرید
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="img"><img src="./~/content/img/menu/5.svg" width="35" height="35" alt="فروشگاه" /></div> ثبت رایگان کالا
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h1 id="logo" class="col-md-5 col-sm-7">
+                        <div class="row">
+                            <a href=""><img src="./~/content/img/logo/logo.png" alt="خرید اینترنتی" /></a>
+                        </div>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header End-->
+    <!--Nav Start-->
+    <nav class="container hidden-sm">
+        <div class="row">
+            <div class="col-xs-24">
+                <div class="box-navigation">
+                    <div class="for-inner-slide-nav">
+                        <ul class="navigation-level-1">
+                            <li>
+                                <a href="">
+                                    لوازم الکترونیکی
+                                    <i class="icon icon-icon73 transition-01s"></i>
+                                </a>
+                                <ul class="navigation-level-2 transition-cubic-2">
+                                    <li>
+                                        <a href="">موبایل</a>
+                                        <div class="navigation-level-3 transition-03s">
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع گوشی</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع گوشی</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع گوشی</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع گوشی</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="">لپ تاپ</a>
+                                        <div class="navigation-level-3 transition-03s">
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع لپ تاپ</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع لپ تاپ</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع لپ تاپ</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع لپ تاپ</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="">دوربین</a>
+                                        <div class="navigation-level-3 transition-03s">
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع دوربین</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع دوربین</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع دوربین</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع دوربین</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="">کامپیوتر و تجهیزات جانبی</a>
+                                        <div class="navigation-level-3 transition-03s">
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع کامپیوتر</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع کامپیوتر</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع کامپیوتر</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع کامپیوتر</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="">ماشین های اداری</a>
+                                        <div class="navigation-level-3 transition-03s">
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع ماشین های اداری</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع ماشین های اداری</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع ماشین های اداری</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">انواع ماشین های اداری</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="">لوازم جانبی کالای دیجیتال</a>
+                                        <div class="navigation-level-3 transition-03s">
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">لوازم جانبی موبایل</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">لوازم جانبی موبایل</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">لوازم جانبی موبایل</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="column-navigation">
+                                                <ul class="navigation-level-4">
+                                                    <li class="title"><a href="">لوازم جانبی موبایل</a></li>
+                                                    <li class="item"><a href="">گوشی دو سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی تک سیم کارت</a></li>
+                                                    <li class="item"><a href="">گوشی های 4G</a></li>
+                                                    <li class="item"><a href="">گوشی های کلاسیک</a></li>
+                                                    <li class="item"><a href="">فبلت</a></li>
+                                                    <li class="item"><a href="">بر اساس سیستم عامل</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">
+                                    محصولات آقایان
+                                    <i class="icon icon-icon73 transition-01s"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    محصولات خانوم ها
+                                    <i class="icon icon-icon73 transition-01s"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    محصولات کودک ها
+                                    <i class="icon icon-icon73 transition-01s"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    لوازم برقی
+                                    <i class="icon icon-icon73 transition-01s"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    لوازم ورزشی
+                                    <i class="icon icon-icon73 transition-01s"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    کتاب و آموزش ها
+                                    <i class="icon icon-icon73 transition-01s"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    آرایش و بهداشت
+                                    <i class="icon icon-icon73 transition-01s"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    وسایل نقلیه
+                                    <i class="icon icon-icon73 transition-01s"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Nav Start-->
+    <!--Advertising Start-->
+    <section class="container mares">
+        <div class="row">
+            <div class="col-xs-24">
+                <div class="tabligh">
+                    <a href=""> <img src="~/content/img/ad/ad.jpg" alt="" /> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Advertising End-->
+    <!--Content Start-->
+    @RenderBody()
+    <!--Content End-->
+    <!--Footer Start-->
+    <footer class="container">
+        <div class="row">
+            <div class="col-xs-24">
+                <div class="footer">
+                    <div class="col-md-14">
+                        <div class="row">
+                            <div class="fbox col-sm-8 col-xs-12">
+                                <h5>خرید در ایسام</h5>
+                                <ul>
+                                    <li><a href="">مزایای خرید کالا از ایسام</a></li>
+                                    <li><a href="">ضمانت برگشت پول</a></li>
+                                    <li><a href="">شرکت در مزایدات</a></li>
+                                    <li><a href="">لیست فروشگاه ها</a></li>
+                                    <li><a href="">رهگیری مرسوله پستی</a></li>
+                                    <li><a href="">تایید دریافت کالا</a></li>
+                                    <li><a href="">ضمانت برگشت پول</a></li>
+                                    <li><a href="">شرکت در مزایدات</a></li>
+                                    <li><a href="">لیست فروشگاه ها</a></li>
+                                </ul>
+                            </div>
+                            <div class="fbox col-sm-8 col-xs-12 ">
+                                <h5>درباره ایسام</h5>
+                                <ul>
+                                    <li><a href="">پرسش های متداول</a></li>
+                                    <li><a href="">انتقادات و پیشنهادات</a></li>
+                                    <li><a href="">وبلاگ ایسام</a></li>
+                                    <li><a href="">تماس با ایسام</a></li>
+                                    <li><a href="">نقشه سایت</a></li>
+                                    <li><a href="">راهنما</a></li>
+                                    <li><a href="">تماس با ایسام</a></li>
+                                    <li><a href="">انتقادات و پیشنهادات</a></li>
+                                    <li><a href="">نقشه سایت</a></li>
+                                </ul>
+                            </div>
+                            <div class="fbox col-sm-8 col-xs-12">
+                                <h5>فروش در ایسام</h5>
+                                <ul>
+                                    <li class="li"><a href="">مزایای فروش کالا در ایسام</a></li>
+                                    <li class="li"><a href="">حمایت از فروشندگان</a></li>
+                                    <li class="li"><a href="">قوانین مرتبط با اختلافات</a></li>
+                                    <li class="li"><a href="">کالاها و مبادلات ممنوعه</a></li>
+                                    <li class="li"><a href="">دعوت دوستان به ایسام</a></li>
+                                    <li class="li"><a href="">قوانین مرتبط با اختلافات</a></li>
+                                    <li class="li"><a href="">حمایت از فروشندگان</a></li>
+                                    <li class="li"><a href="">کالاها و مبادلات ممنوعه</a></li>
+                                    <li class="li"><a href="">حمایت از فروشندگان</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-sm-24 col-xs-24 newslatter">
+                        <div class="namads">
+                            <a href=""><img src="~/content/img/namad/1.png" alt="" /></a>
+                            <a href=""><img src="~/content/img/namad/2.png" alt="" /></a>
+                            <a href=""><img src="~/content/img/namad/3.png" alt="" /></a>
+                        </div>
+                        <ul class="followUs">
+                            <li><a href="" target="_blank" rel="nofollow"><i class="icon-gplus"></i></a></li>
+                            <li><a href="" target="_blank" rel="nofollow"><i class="icon-cloob"></i></a></li>
+                            <li><a href="" target="_blank" rel="nofollow"><i class="icon-instagram"></i></a></li>
+                            <li><a href="" target="_blank" rel="nofollow"><i class="icon-aparat"></i></a></li>
+                        </ul> <span class="flte">ایسام را در شبکه های اجتمایی دنبال کنید</span>
+                        <div class="appandroid">
+                            <a href=""><img src="~/content/img/app/1.png" alt="" /></a>
+                            <a href=""><img src="~/content/img/app/2.png" alt="" /></a>
+                            <a href=""><img src="~/content/img/app/3.png" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+    <!--Copyright Start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-24">
+                <div class="copyright">
+                    <p>
+                        طراحی توسط نـــاید
+                        <br />تمامی حقوق این سایت متعلق به نـــاید می باشد و هرگونه کپی برداری پیگرد قانونی دارد
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Copyright End-->
+    <!--Advertising Start-->
+    <!--
+      <div class="tabligh-bl">
+        <div class="tabligh-head"> <span class="close-tabligh-bl">
+             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="18pt" viewBox="0 0 18 18" version="1.1" class="centerbox">
+    <g id="surface1">
+    <path style=" stroke:none;fill-rule:nonzero;fill:#A6A6A6;fill-opacity:1;" d="M 4.0625 3.253906 L 3.253906 4.0625 L 8.191406 9 L 3.253906 13.9375 L 4.0625 14.75 L 9 9.808594 L 13.9375 14.75 L 14.75 13.9375 L 9.808594 9 L 14.75 4.0625 L 13.9375 3.253906 L 9 8.191406 Z "/>
+    </g>
+    </svg>
+
+           </span>تبلیغات </div>
+        <div class="tabligh-body">
+          <a href=""> <img src="~/content/img/ad/ad-bl.jpg" alt=""> </a>
+        </div>
+      </div>
+      <div class="tabligh-br">
+        <div class="tabligh-head"> <span class="close-tabligh-br">
+             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="18pt" viewBox="0 0 18 18" version="1.1" class="centerbox">
+    <g id="surface1">
+    <path style=" stroke:none;fill-rule:nonzero;fill:#A6A6A6;fill-opacity:1;" d="M 4.0625 3.253906 L 3.253906 4.0625 L 8.191406 9 L 3.253906 13.9375 L 4.0625 14.75 L 9 9.808594 L 13.9375 14.75 L 14.75 13.9375 L 9.808594 9 L 14.75 4.0625 L 13.9375 3.253906 L 9 8.191406 Z "/>
+    </g>
+    </svg>
+
+           </span>تبلیغات </div>
+        <div class="tabligh-body">
+          <a href=""> <img src="~/content/img/ad/ad-bl.jpg" alt=""> </a>
+        </div>
+      </div>
+      -->
+    <!--Advertising End-->
+    <!--Scroll To Up Start-->
+    <div class="go-up-footer button-active">
+        <img src="~/content/img/icons/scrolltop.png" alt="" class="centerbox" />
+    </div>
+    <!--Scroll To Up End-->
+    <script src="~/content/style/js/main.js">
+    </script>
+</body>
+</html>

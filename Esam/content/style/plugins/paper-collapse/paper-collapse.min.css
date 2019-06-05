@@ -1,0 +1,122 @@
+
+.collapse-card {
+  cursor: pointer;
+  color: #777;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  position: relative;
+  padding: 0;
+}
+
+.collapse-card .title {
+  line-height: 1.8rem;
+}
+
+.collapse-card .title:before,
+.collapse-card .title:after {
+  content: " ";
+  display: table
+}
+
+.collapse-card .title:after { clear: both }
+
+.collapse-card .title i {float: left;}
+
+.collapse-card .title span {
+  float: right;
+  margin-left: 1rem
+}
+
+.collapse-card .title strong {
+  display: block;
+  margin-left: 34px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 400;
+  color: #68686f;
+}
+
+
+.collapse-card .body {
+  padding: 0 10px;
+  display: none;
+  border-right: 1px solid #ebebee;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.collapse-card * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.collapse-card.active {
+}
+
+
+
+.inside-collapse-card {
+  
+  
+margin-bottom: 0;
+  
+border-radius: 2px;
+  
+margin: -8px -15px;
+padding: 7.6px 15px;
+}
+
+.inside-collapse-card i {
+  
+position: absolute;
+  
+width: 50px;
+  
+top: 0px;
+  
+left: 0px;
+  
+height: 44px;
+}
+
+.inside-collapse-card.active i {
+  transform: rotate(180deg);
+}
+
+.inside-collapse-card.active i svg g path {
+      fill: #79b50b !important;
+}
+
+.inside-body-collapse-card {
+  
+}
+
+.inside-body-collapse-card a {
+  position:relative;
+  float: right;
+  width: 100%;
+  padding: 8px 28px 8px 0;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+.inside-body-collapse-card a:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  background: #79b50b;
+  margin-top: -3px;
+}
+
+.inside-body-collapse-card a:hover {
+  background: #f5f9f0;
+}

@@ -1,0 +1,74 @@
+﻿@model Esam.Models.ViewModel.CustomRegModel
+@{
+    ViewBag.Title = "Confirm Email Address";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+<style>
+    .input-code {
+        color: #000000;
+        font-size: 25px !important;
+        font-weight: 600 !important;
+        line-height: 1.571;
+        padding: 11px 12px;
+        letter-spacing: 5px;
+        text-align: center;
+        direction: ltr;
+        height: 55px !important;
+    }
+
+    .alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        direction: rtl;
+        text-align: right;
+    }
+
+    .alert-info {
+        color: #31708f;
+        background-color: #d9edf7;
+        border-color: #bce8f1
+    }
+</style>
+<section class="container">
+    <div class="row">
+        <div class="col-xs-24">
+            <div class="box-register textcenter">
+                <div class="content clearfix">
+                    @if (TempData["JS"] != null)
+                    {
+                        <span class="alert alert-info">@TempData["JS"].ToString()</span>
+                    }
+                    <div class="form-container noback">
+                        <div class="head">
+                            تایید حساب کاربری
+                        </div>
+                        <div class="userbox rtl">
+                            @using ((Html.BeginForm("confirm", "userauthorize", FormMethod.Post, new { id = "frmverifyaccount" })))
+                            {
+                                <div class="userform">
+                                    تایید حساب کاربری
+                                    <p>لطفا کد تایید ارسال شده به پست الکترونیکی را وارد نمایید .</p>
+                                    <div class="form-group alert alert-success">
+                                        <span class="send-code">کد تایید به پست الکترونیکی @Model.email ارسال گردید.</span>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <div>
+                                            @Html.TextBoxFor(m => m.confirmemail, new { @class = "en input-code", @id = "confirmemail", @maxlength = "6", @type = "text", @placeholder = "_ _ _ _ _" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <input class="dk-button-container left transition-03s button-active" value="ثبت نام در ایسام" type="submit" />
+                                        <input type="hidden" id="userid" name="userid" value="@Model.userid" />
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

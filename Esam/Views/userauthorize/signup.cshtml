@@ -1,0 +1,130 @@
+﻿@model Esam.Models.ViewModel.CustomRegModel
+@{
+    ViewBag.Title = "Signup";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+<style>
+    .input-code {
+        color: #000000;
+        font-size: 25px !important;
+        font-weight: 600 !important;
+        line-height: 1.571;
+        padding: 11px 12px;
+        letter-spacing: 5px;
+        text-align: center;
+        direction: ltr;
+        height: 55px !important;
+    }
+
+    .alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        direction: rtl;
+        text-align: right;
+    }
+
+    .alert-info {
+        color: #31708f;
+        background-color: #d9edf7;
+        border-color: #bce8f1
+    }
+</style>
+<section class="container">
+    <div class="row">
+        <div class="col-xs-24">
+            <div class="box-register textcenter">
+                <div class="content clearfix">
+                    @if (TempData["JS"] != null)
+                    {
+                        <span class="alert alert-info">@TempData["JS"].ToString()</span>
+                    }
+                    <div class="form-container noback">
+                        <div class="head">
+                            <h1><span>عضویت</span> در ایسام</h1>
+                        </div>
+                        <div class="userbox rtl">
+                            @using ((Html.BeginForm("signup", "userauthorize", new { }, FormMethod.Post, new { id = "frmcustomerregister" })))
+                            {
+                                <div class="userform">
+                                    <div class="form-group clearfix">
+                                        <label for="txtEmail"><span>نام</span></label>
+                                        @Html.TextBoxFor(m => m.fname, new { @class = "en", @id = "fname", @type = "text", @name = "fname", @placeholder = "" })
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label for="txtEmail"><span>نام خانوادگی</span></label>
+                                        @Html.TextBoxFor(m => m.lname, new { @class = "en", @id = "lname", @type = "text", @name = "lname", @placeholder = "" })
+
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label for="txtEmail"><span>پست الکترونیکی</span></label>
+                                        @Html.TextBoxFor(m => m.email, new { @class = "en ltr", @id = "email", @type = "email", @name = "email", placeholder = "" })
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label for="txtPassword">کلـمه عبـور</label>
+                                        @Html.TextBoxFor(m => m.password, new { @class = "en ltr", @id = "password", @type = "password", @name = "password" })
+                                    </div>
+                                    <div class="form-group clearfix box-all-capcha">
+                                        <div class="box-capcha">69335</div>
+                                        <button class="reload-capcha" title="تغییر کد امنیتی">
+                                            <span class="icons icons-reload centerbox"></span>
+                                        </button>
+                                        <input name="" type="text" title="کد امنیتی" class="en" placeholder="کد امنیتی">
+                                    </div>
+
+                                    <div class="form-group clearfix rules">
+                                        <div class="ckeckbox-control right">
+                                            <input id="acru" type="checkbox" checked="checked">
+                                            <label for="acru"></label>
+                                        </div>
+                                        <div class="agreement">
+                                            <label for="acru">
+                                                <a target="_blank" href="">شرایط و قوانین</a>
+                                                استفاده از ایسام را مطالعه نموده و با آن موافقم
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <input class="dk-button-container left transition-03s button-active" value="ثبت نام در ایسام" type="submit" />
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <div class="form-container noback">
+                        <div class="head">
+                            <h1><span>ورود</span> به ایسام</h1>
+                        </div>
+                        <div class="userbox rtl">
+                            @using ((Html.BeginForm("login", "userauthorize", new { }, FormMethod.Post, new { id = "frmcustomerlogin" })))
+                            {
+                                <div class="userform">
+                                    <div class="form-group clearfix">
+                                        <label for="txtEmail"><span>پست الکترونیکی</span></label>
+                                        @Html.TextBoxFor(m => m.email, new { @class = "en ltr", @id = "email", @type = "email", @name = "email", placeholder = "" })
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label for="txtPassword">کلـمه عبـور</label>
+                                        @Html.TextBoxFor(m => m.password, new { @class = "en ltr", @id = "password", @type = "password", @name = "password" })
+                                    </div>
+                                    <div class="form-group clearfix box-all-capcha">
+                                        <div class="box-capcha">69335</div>
+                                        <button class="reload-capcha" title="تغییر کد امنیتی">
+                                            <span class="icons icons-reload centerbox"></span>
+                                        </button>
+                                        <input name="" type="text" title="کد امنیتی" class="en" placeholder="کد امنیتی">
+                                    </div>
+                                    <div class="form-group clearfix">
+                                            <input class="dk-button-container left transition-03s button-active" value="ورود در ایسام" type="submit" />
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
